@@ -77,6 +77,11 @@ return {
       capabilities = capabilities
     })
 
+    -- yay -S cmake-language-server
+    ifExecutable('cmake-language-server', lspconfig.cmake.setup, {
+      capabilities = capabilities
+    })
+
 
     vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
       vim.lsp.diagnostic.on_publish_diagnostics, {

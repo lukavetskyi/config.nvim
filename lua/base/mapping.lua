@@ -32,7 +32,7 @@ map('n', '<leader>bc', ':BufferLinePickClose<cr>', hide)
 
 map('n', '<leader>tf', ':Telescope find_files<cr>', hide)
 map('n', '<leader>td', ':Telescope diagnostics<cr>', hide)
-map('n', '<leader>tw', ':Telescope grep_string<cr>', hide)
+map('n', '<leader>tw', ':Telescope live_grep<cr>', hide)
 map('n', '<leader>th', ':Telescope help_tags<cr>', hide)
 
 map('n', '<leader>f', ':lua vim.lsp.buf.format()<cr>', hide)
