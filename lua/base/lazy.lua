@@ -1,24 +1,4 @@
-local plugins = {
-  require("plugins.lsp"),
-  require("plugins.neo-tree"),
-  require("plugins.better-escape"),
-  require("plugins.lua-line"),
-  require("plugins.catppuccin"),
-  require("plugins.ccc"),
-  require("plugins.dressing"),
-  require("plugins.dashboard"),
-  require("plugins.cmp"),
-  require("plugins.telescope"),
-  require("plugins.treesitter"),
-  require("plugins.bufferline"),
-  require("plugins.comment"),
-  require("plugins.multicursors"),
-  require("plugins.trouble"),
-  require("plugins.illuminate"),
-  require("plugins.gitsigns"),
-  require("plugins.terminal"),
-  require("plugins.debagger")
-}
+local plugins = require("plugins")
 
 local opts = {}
 

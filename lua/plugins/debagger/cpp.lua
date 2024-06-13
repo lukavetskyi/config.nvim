@@ -1,22 +1,6 @@
-return {
-  "rcarriga/nvim-dap-ui",
-  event = "VeryLazy",
-  dependencies = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
-  config = function()
-    local dap = require('dap')
-    local dapui = require("dapui")
+-- yay -S codelldb-bin
 
-    dapui.setup()
-    dap.listeners.after.event_initialized["dapui_config"] = function()
-      dapui.open()
-    end
-    dap.listeners.before.event_terminated['dapui_config'] = function()
-      dapui.close()
-    end
-    dap.listeners.before.event_exited['dapui_config'] = function()
-      dapui.close()
-    end
-
+return function(dap)
     dap.adapters.codelldb = {
       type = 'server',
       port = "${port}",
@@ -44,8 +28,4 @@ return {
       },
     }
     dap.configurations.c = dap.configurations.cpp
-  end
-
-}
-
--- yay -S codelldb-bin
+end

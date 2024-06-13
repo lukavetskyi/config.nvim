@@ -1,5 +1,2 @@
-require("base/mapping")
-require("base/options")
-require("base/lazy")
-require("base/additional")
-require('additions/init')
+require("base")
+require("additions")
