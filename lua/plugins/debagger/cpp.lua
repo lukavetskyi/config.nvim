@@ -41,10 +41,10 @@ return function(dap)
       name = "Launch file",
       type = "codelldb",
       request = "launch",
-      program = debug_config_program(),
+      program = debug_config_program,
       cwd = '${workspaceFolder}',
       stopOnEntry = false,
-      args = debug_config_args(),
+      args = debug_config_args,
     },
   }
   dap.configurations.c = dap.configurations.cpp
