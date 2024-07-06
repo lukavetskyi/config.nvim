@@ -58,3 +58,6 @@ map('n', '<F5>', ":DapContinue<cr>", hide)
 map('n', '<F6>', ":DapStepInto<cr>", hide)
 map('n', '<F7>', ":DapStepOver<cr>", hide)
 map('n', '<F8>', ":DapTerminate<cr>", hide)
+
+map('n', 'zR', require('ufo').openAllFolds, hide)
+map('n', 'zM', require('ufo').closeAllFolds, hide)

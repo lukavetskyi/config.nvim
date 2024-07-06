@@ -34,3 +34,9 @@ vim.bo.expandtab = true
 vim.opt.shortmess:append("c")
 vim.wo.number = true
 vim.wo.relativenumber = true
+
+vim.o.foldcolumn = '0'
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.foldenable = true
+vim.o.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]

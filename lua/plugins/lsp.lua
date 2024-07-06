@@ -10,6 +10,10 @@ return {
     local lspconfig = require('lspconfig')
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+    capabilities.textDocument.foldingRange = {
+      dynamicRegistration = false,
+      lineFoldingOnly = true
+    }
     -- pkg install lua-language-server
     --
     -- pacman -S lua-language-server
@@ -52,6 +56,10 @@ return {
     -- pacman -S clang
     lspconfig.clangd.setup({
       capabilities = capabilities,
+      cmd = {
+        "clangd",
+        "--clang-tidy",
+      },
     })
 
     -- npm install -g dockerfile-language-server-nodejs
