@@ -22,8 +22,9 @@ map('n', '<A-l>', '<C-W>>', hide)
 map('v', '<', '<gv', hide)
 map('v', '>', '>gv', hide)
 
-map('n', '<leader>e', ':Neotree focus reveal<cr>', hide)
+map('n', '<leader>e', ':Neotree left<cr>', hide)
 map('n', '<leader>o', ':Neotree toggle<cr>', hide)
+map('n', '<leader>fe', ':Neotree float<cr>', hide)
 
 map('n', '<A-[>', ':BufferLineCyclePrev<cr>', hide)
 map('n', '<A-]>', ':BufferLineCycleNext<cr>', hide)
