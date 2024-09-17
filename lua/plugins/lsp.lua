@@ -14,6 +14,12 @@ return {
       dynamicRegistration = false,
       lineFoldingOnly = true
     }
+
+    -- yay -S jdtls
+    lspconfig.jdtls.setup({
+      capabilities = capabilities,
+    })
+
     -- pkg install lua-language-server
     --
     -- pacman -S lua-language-server
