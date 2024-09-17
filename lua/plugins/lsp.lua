@@ -22,7 +22,7 @@ return {
     })
 
     -- npm install -g typescript typescript-language-server
-    lspconfig.tsserver.setup({
+    lspconfig.ts_ls.setup({
       capabilities = capabilities,
     })
 
