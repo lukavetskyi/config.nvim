@@ -62,3 +62,4 @@ map('n', '<F8>', ":DapTerminate<cr>", hide)
 
 map('n', 'zR', require('ufo').openAllFolds, hide)
 map('n', 'zM', require('ufo').closeAllFolds, hide)
+map('n', '<leader>db', ":DBUIToggle<cr>", hide)
