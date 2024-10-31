@@ -21,9 +21,23 @@ return {
     })
 
     -- pyright
-    lspconfig.pyright.setup({
-      capabilities = capabilities,
-    })
+    -- lspconfig.pyright.setup({
+      -- capabilities = capabilities,
+    -- })
+
+    -- python-lsp-server python-rope python-pyflakes python-mccabe python-pycodestyle python-pydocstyle autopep8 flake8 python-pylint
+    require 'lspconfig'.pylsp.setup {
+      settings = {
+        pylsp = {
+          plugins = {
+            autopep8 = { enabled = true },
+            flake8 = { enabled = true },
+            -- pydocstyle = { enabled = true, ignore = {"D100", "D103"} },
+            pylint = { enabled = true , args = "--errors-only"},
+          }
+        }
+      }
+    }
 
     -- lua-language-server
     lspconfig.lua_ls.setup({
