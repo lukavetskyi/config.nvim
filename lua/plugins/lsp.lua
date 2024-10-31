@@ -15,19 +15,17 @@ return {
       lineFoldingOnly = true
     }
 
-    -- yay -S jdtls
+    -- jdtls
     lspconfig.jdtls.setup({
       capabilities = capabilities,
     })
 
-    -- pacman -S pyright
+    -- pyright
     lspconfig.pyright.setup({
       capabilities = capabilities,
     })
 
-    -- pkg install lua-language-server
-    --
-    -- pacman -S lua-language-server
+    -- lua-language-server
     lspconfig.lua_ls.setup({
       capabilities = capabilities,
     })
@@ -62,9 +60,7 @@ return {
       capabilities = capabilities
     })
 
-    -- pkg install clang
-    --
-    -- pacman -S clang
+    -- clang
     lspconfig.clangd.setup({
       capabilities = capabilities,
       cmd = {
@@ -83,12 +79,12 @@ return {
       capabilities = capabilities,
     })
 
-    -- yay -S autotools-language-server
+    -- autotools-language-server
     lspconfig.autotools_ls.setup({
       capabilities = capabilities
     })
 
-    -- yay -S cmake-language-server
+    -- cmake-language-server
     lspconfig.cmake.setup({
       capabilities = capabilities
     })
