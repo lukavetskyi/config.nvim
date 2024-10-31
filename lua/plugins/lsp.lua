@@ -20,6 +20,11 @@ return {
       capabilities = capabilities,
     })
 
+    -- pacman -S pyright
+    lspconfig.pyright.setup({
+      capabilities = capabilities,
+    })
+
     -- pkg install lua-language-server
     --
     -- pacman -S lua-language-server
