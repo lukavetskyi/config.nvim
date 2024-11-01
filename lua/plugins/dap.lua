@@ -17,9 +17,6 @@ return {
       dapui.close()
     end
 
-    require("plugins.debagger.cpp")(dap)
-
-  end
-
+    require("debaggers.cpp")(dap)
+  end,
 }
-
