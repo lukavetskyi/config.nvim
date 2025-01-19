@@ -1,1 +1,2 @@
-require('additions.docker-compose').fn()
+require('additions.docker-compose')()
+require('additions.calculator')()

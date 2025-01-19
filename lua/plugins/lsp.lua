@@ -1,4 +1,3 @@
-
 local success, lspSettings = pcall(require, "lsp-settings")
 if not success then
   lspSettings = require("lsp-settings-default")
@@ -32,15 +31,21 @@ return {
 
 
     if lspSettings.pylsp then
-      -- python-lsp-server python-rope python-pyflakes python-mccabe python-pycodestyle python-pydocstyle autopep8 flake8 python-pylint
+      -- python-lsp-server python-rope python-pyflakes python-mccabe python-pycodestyle python-pydocstyle autopep8 flake8 python-pylint  python-lsp-isort
       require 'lspconfig'.pylsp.setup {
         settings = {
           pylsp = {
             plugins = {
+              isort = { enabled = true },
               autopep8 = { enabled = true },
               flake8 = { enabled = true },
               -- pydocstyle = { enabled = true, ignore = {"D100", "D103"} },
               pylint = { enabled = true, args = "--errors-only" },
+              rope_autoimport = {
+                enabled = true,
+                completions = { enabled = true },
+                code_actions = { enabled = true }
+              }
             }
           }
         }

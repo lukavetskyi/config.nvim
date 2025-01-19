@@ -6,7 +6,6 @@ return {
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-path',
     'hrsh7th/cmp-cmdline',
-    'hrsh7th/cmp-calc',
     'hrsh7th/cmp-emoji',
     'hrsh7th/cmp-latex-symbols',
     'hrsh7th/cmp-nvim-lsp-signature-help',
@@ -18,7 +17,7 @@ return {
   config = function()
     local cmp = require 'cmp'
     local lspkind = require('lspkind')
-    
+
     cmp.setup({
       formatting = {
         format = lspkind.cmp_format({
@@ -54,7 +53,6 @@ return {
         { name = 'nvim_lsp_signature_help' },
         { name = 'buffer' },
         { name = 'path' },
-        { name = 'calc' },
         { name = "emoji" },
         { name = "latex_symbols" },
       })
