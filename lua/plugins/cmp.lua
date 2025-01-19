@@ -8,7 +8,7 @@ return {
     'hrsh7th/cmp-cmdline',
     'hrsh7th/cmp-nvim-lsp-signature-help',
     'onsails/lspkind.nvim',
-    require('plugins.luasnip')
+    require('plugins.luasnip-plugin')
   },
   lazy = true,
   event = { "InsertEnter", "CmdlineEnter" },
