@@ -34,7 +34,7 @@ return function()
       t({"","if __name__ == \"__main__\":"}),
       t({"","\tmain()"})
     }),
-    s('fun',{
+    s('fn',{
       t("def "),
       i(1,"name"),
       t("("),

@@ -19,6 +19,7 @@ vim.opt.scrolloff = 10
 vim.opt.sidescrolloff = 5
 vim.opt.mouse = "a"
 vim.wo.wrap = true
+vim.wo.linebreak = true
 vim.wo.number = true
 vim.opt.cursorline = true
 vim.wo.signcolumn = "yes"
