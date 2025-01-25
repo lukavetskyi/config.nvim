@@ -61,5 +61,6 @@ return {
   "zM - Close all folds",
   "<leader>db - Toggle database UI",
   "<leader>m - Start multicursor",
-  "<leader>help - This help menu"
+  "<leader>help - This help menu",
+  "P - In NeoTree open the preview window"
 }

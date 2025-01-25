@@ -3,7 +3,7 @@ local hide = { noremap = true, silent = true }
 
 vim.g.mapleader = ' '
 
-map('n', '<leader>w', ':w<cr>', hide)
+map('n', '<leader>w', ':<ESC>:w<cr>', hide)
 map('n', '<leader>q', ':q<cr>', hide)
 
 map('n', '<C-A-v>', ':vsplit<cr>', hide)

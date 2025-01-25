@@ -1,3 +1,4 @@
+-- sudo pacman -Syu imagemagick
 return {
   "nvim-neo-tree/neo-tree.nvim",
   branch = "v3.x",
@@ -10,10 +11,27 @@ return {
     close_if_last_window = true,
     window = {
       position = "left",
-      width = 30
+      width = 30,
+      source = {
+        "filesystem",
+        "buffers",
+        "git_status"
+      }
+    },
+    source_selector = {
+      winbar = true,
+    },
+    mappings = {
+      ["P"] = {
+        "toggle_preview",
+        config = {
+          use_float = true,
+          use_image_nvim = false,
+          title = 'Neo-tree Preview',
+        },
+      },
     }
   },
   cmd = "Neotree",
   lazy = true
 }
-
