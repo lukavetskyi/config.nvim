@@ -18,4 +18,6 @@ return {
     return options
   end,
   config = true,
+  lazy = true,
+  event = 'BufEnter',
 }

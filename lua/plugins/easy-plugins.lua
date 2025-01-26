@@ -2,28 +2,14 @@ return {
   {
     'stevearc/dressing.nvim',
     opts = {},
+    event = "VeryLazy",
+    lazy = true
   },
   {
     "lewis6991/gitsigns.nvim",
-    opts = {}
-  },
-  {
-    "folke/noice.nvim",
-    event = "VeryLazy",
     opts = {},
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      {
-        "rcarriga/nvim-notify",
-        config = function()
-          require("notify").setup {
-            render = "minimal",
-            timeout = 250,
-          }
-          vim.notify = require('notify')
-        end
-      }
-    }
+    event = "BufEnter",
+    lazy = true
   },
   {
     'nvim-telescope/telescope.nvim',
@@ -36,21 +22,34 @@ return {
   {
     'akinsho/toggleterm.nvim',
     version = "*",
-    config = true
+    config = true,
+    lazy = true,
+    cmd = "ToggleTerm"
   },
   {
     "folke/trouble.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {},
+    event = "BufEnter",
+    lazy = true
   },
   {
     'kevinhwang91/nvim-ufo',
     dependencies = { "kevinhwang91/promise-async" },
-    opts = {}
+    opts = {},
+    event = "BufEnter",
+    lazy = true
   },
   {
     'sindrets/diffview.nvim',
-    opts={}
+    opts = {},
+    lazy = true,
+    cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewToggleFiles", "DiffviewFocusFiles", "DiffviewRefresh" }
+  },
+  {
+    "max397574/better-escape.nvim",
+    opts = {},
+    event = "InsertEnter",
+    lazy = true
   }
-
 }

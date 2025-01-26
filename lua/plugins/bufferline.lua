@@ -7,5 +7,5 @@ return {
   } },
   opts = {},
   event = 'BufEnter',
-  lazy = true
+  lazy = true,
 }

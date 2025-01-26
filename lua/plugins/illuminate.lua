@@ -5,5 +5,7 @@ return {
       modes_allowlist = { 'n', 'i', 'v' },
       delay = 0
     })
-  end
+  end,
+  lazy=true,
+  event="BufEnter"
 }

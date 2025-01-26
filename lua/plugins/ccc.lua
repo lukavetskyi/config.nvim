@@ -6,5 +6,6 @@ return {
       lsp = true,
     },
   },
-  lazy = false,
+  lazy = true,
+  event = 'BufEnter',
 }
