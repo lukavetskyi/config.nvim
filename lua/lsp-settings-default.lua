@@ -1,7 +1,7 @@
 return {
   jdtls = false,
-  pylsp = true,
-  lua_ls = true,
+  pylsp = false,
+  lua_ls = false,
   ts_ls = false,
   html = false,
   cssls = false,
